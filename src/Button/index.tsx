@@ -6,7 +6,7 @@ export enum ButtonType {
     Button
 }
 
-export enum CategoryType {
+export enum ButtonCategoryType {
     Primary,
     OutlinePrimary,
     LinkPrimary,
@@ -23,7 +23,7 @@ export enum CategoryType {
 
 export interface IButtonProps {
     type: ButtonType;
-    category: CategoryType;
+    category: ButtonCategoryType;
     caption: string | JSX.Element;
 }
 
@@ -46,7 +46,7 @@ export default class Button extends React.Component<IButtonProps, IButtonStates>
                 break;
         }
         switch (this.props.category) {
-            case CategoryType.Primary:
+            case ButtonCategoryType.Primary:
                 buttonCategory = 'fb-button-primary';
                 break;
             default:

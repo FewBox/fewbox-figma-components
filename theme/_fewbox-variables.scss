@@ -1,9 +1,9 @@
 // Base
 $primary-color: #d864a3;
-$primary-variant-color: #d864a3;
+$primary-variant-color: light($primary-color, 0.6);
 $secondary-color: #3d23c4;
-$secondary-variant-color: #3d23c4;
-$background-color: #a9a9a9;
+$secondary-variant-color: light($secondary-color, 0.6);
+$background-color: #ffffff;
 // On
 $on-primary-color: #ffffff;
 $on-primary-variant-color: #ffffff;
@@ -12,3 +12,10 @@ $on-secondary-variant-color: #ffffff;
 // Other
 $typography-color: #ffffff;
 $iconography-color: #000000;
+// Typography
+$typography-size: 12px;
+// Component
+$input-placeholder-color: #d9d9d9;
+$input-border-color: #d9d9d9;
+$icon-size: 12px;
+$icon-color: #d9d9d9;
