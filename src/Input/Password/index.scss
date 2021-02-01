@@ -1,6 +1,6 @@
 @import "theme/fewbox-variables";
-@import "../style";
+@import "..";
 
-.fb-textbox {
+.fb-password {
     @extend .fb-input;
 }

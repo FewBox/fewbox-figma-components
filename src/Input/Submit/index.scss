@@ -1,0 +1,13 @@
+@import "theme/fewbox-variables";
+@import "..";
+
+.fb-submit {
+    @extend .fb-input;
+    cursor: pointer;
+    background-color: $primary-color;
+    input {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: $on-primary-color;
+    }
+}

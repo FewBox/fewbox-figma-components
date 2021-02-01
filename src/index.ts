@@ -1,14 +1,8 @@
 import '../theme/_fewbox-default.scss';
-import _Button, { ButtonType as _ButtonType, ButtonCategoryType as _ButtonCategoryType } from './Button';
-import _TextBox from './Input/TextBox';
-import _IconUser from './Icon/User';
-//import _Signin from './Signin';
+import * as _UI from './export-ui';
+import * as _Icon from './export-icon';
 
-export namespace Plugin {
-    export const Button = _Button;
-    export const ButtonType = _ButtonType;
-    export const ButtonCategoryType = _ButtonCategoryType;
-    export const TextBox = _TextBox;
-    export const IconUser = _IconUser;
-    //export const Signin = _Signin;
+export namespace Figma {
+    export const UI = _UI;
+    export const Icon = _Icon;
 }

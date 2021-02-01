@@ -1,7 +1,9 @@
-@import '~@fewbox/react-components/dist/_lib/styles/functions';
-@import '~@fewbox/react-components/dist/_lib/styles/variables';
 @import './fewbox-global';
-@import '../src/Form/style';
-@import '../src/Button/style';
-@import '../src/Input/TextBox/style';
-@import '../src/Icon/style';
+@import '../src/Form';
+@import '../src/Button';
+@import '../src/Input/TextBox';
+@import '../src/Input/Password';
+@import '../src/Input/Submit';
+@import '../src/Select';
+@import '../src/TextArea';
+@import '../src/Icon';
