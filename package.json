@@ -12,6 +12,9 @@
     "start": "webpack serve --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@fewbox/react-components": "^0.0.17",
     "@svgr/webpack": "^5.5.0",
