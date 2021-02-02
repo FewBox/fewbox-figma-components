@@ -9,7 +9,7 @@
     "dev": "webpack --config webpack.dev.js",
     "build:tsc": "tsc",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --port 3000",
+    "start": "webpack serve --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
