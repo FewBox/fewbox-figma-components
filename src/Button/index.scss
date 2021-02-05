@@ -10,7 +10,7 @@
     border-color: $primary-color;
     border: 1px solid transparent;
     color: $on-primary-color;
-}
-.fb-button-primary:hover{
-    
+    &:hover {
+        background-color: darken($primary-color, 0.2);
+    }
 }

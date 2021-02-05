@@ -1,8 +1,10 @@
 import * as React from 'react';
+import { Base } from '@fewbox/react-components';
 import { FormattedMessage } from 'react-intl';
-import { getIntlMessage } from '../langs/util';
 import { Figma } from '../src/index';
 import './HomePage.scss';
+import langs from '../langs';
+import settings from '../settings';
 
 export interface IHomePageProps {
 }
@@ -12,13 +14,28 @@ class HomePage extends React.Component<IHomePageProps, any> {
         console.log(json);
     }
     public render() {
+        let fewBoxOptions = {
+            getToken: () => {
+              return "My Token";
+            },
+            getAppSettings: () => {
+              return settings;
+            },
+            getLanguages: () => {
+              return langs;
+            },
+            showErrorMessage: (message: string) => {
+              alert(message);
+            }
+          };
         return (
-            <div>
+            <div className="homePage">
+                <Base.Boot.FewBox options={fewBoxOptions} />
                 <div>
                     <Figma.UI.Button category={Figma.UI.ButtonCategoryType.Primary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
                 </div>
                 <div>
-                    <Figma.UI.TextBox placeholder={getIntlMessage("Label.Placeholder")} />
+                    <Figma.UI.TextBox placeholder={Base.Util.getIntlMessage("Label.Placeholder")} />
                 </div>
                 <div>
                     <Figma.UI.TextArea rows={2} />
