@@ -1,6 +1,6 @@
 {
   "name": "@fewbox/figma-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "repository": "https://github.com/FewBox/fewbox-figma-components.git",
   "author": "FewBox support@fewbox.com",
@@ -16,7 +16,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "@fewbox/react-components": "^0.0.21",
+    "@fewbox/react-components": "^0.0.22",
+    "@microsoft/signalr": "^5.0.2",
+    "@sentry/browser": "^6.1.0",
     "@svgr/webpack": "^5.5.0",
     "@types/gapi": "^0.0.39",
     "@types/gapi.auth2": "^0.0.52",
@@ -32,11 +34,13 @@
     "html-webpack-plugin": "^4.5.1",
     "mini-css-extract-plugin": "^1.3.5",
     "postcss-loader": "^4.2.0",
+    "query-string": "^6.13.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-ga": "^3.3.0",
     "react-intl": "^5.10.19",
     "react-router-dom": "^5.2.0",
+    "rxjs": "^6.6.3",
     "sass": "^1.32.5",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",

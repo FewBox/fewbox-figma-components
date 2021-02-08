@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { Base } from '@fewbox/react-components';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
 import { Figma } from '../src/index';
 import './HomePage.scss';
 import langs from '../langs';
 import settings from '../settings';
 
 export interface IHomePageProps {
+    intl: any;
 }
 
 class HomePage extends React.Component<IHomePageProps, any> {
@@ -14,28 +15,28 @@ class HomePage extends React.Component<IHomePageProps, any> {
         console.log(json);
     }
     public render() {
-        let fewBoxOptions = {
+        let options = {
             getToken: () => {
-              return "My Token";
+                return "My Token";
             },
             getAppSettings: () => {
-              return settings;
+                return settings;
             },
             getLanguages: () => {
-              return langs;
+                return langs;
             },
             showErrorMessage: (message: string) => {
-              alert(message);
+                alert(message);
             }
-          };
+        };
         return (
             <div className="homePage">
-                <Base.Boot.FewBox options={fewBoxOptions} />
+                <Base.Boot.FewBox options={options} />
                 <div>
                     <Figma.UI.Button category={Figma.UI.ButtonCategoryType.Primary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
                 </div>
                 <div>
-                    <Figma.UI.TextBox placeholder={Base.Util.getIntlMessage("Label.Placeholder")} />
+                    <Figma.UI.TextBox placeholder={this.props.intl.formatMessage({ id: "Label.Placeholder" })} />
                 </div>
                 <div>
                     <Figma.UI.TextArea rows={2} />
@@ -49,8 +50,8 @@ class HomePage extends React.Component<IHomePageProps, any> {
                         <Figma.UI.Password icon={<Figma.Icon.Lock />} name="user.password" />
                         <Figma.UI.Select icon={<Figma.Icon.Group />} name="user.group.name" options={
                             [
-                                { name: getIntlMessage("Label.Option1Name"), value: 1 },
-                                { name: getIntlMessage("Label.Option2Name"), value: 2 }
+                                { name: this.props.intl.formatMessage({ id: "Label.Option1Name" }), value: 1 },
+                                { name: this.props.intl.formatMessage({ id: "Label.Option2Name" }), value: 2 }
                             ]
                         } />
                         <Figma.UI.Submit />
@@ -61,4 +62,4 @@ class HomePage extends React.Component<IHomePageProps, any> {
     }
 }
 
-export default HomePage;
+export default injectIntl(HomePage);
