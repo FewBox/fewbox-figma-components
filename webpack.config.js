@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
     mode: 'development',
@@ -54,11 +53,6 @@ const config = {
         ]
     },
     plugins: [
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: './assets', to: './assets' }
-            ]
-        }),
         new HtmlWebpackPlugin({ template: './containers/index.tmpl.html', title: 'FewBox' })
     ]
 }

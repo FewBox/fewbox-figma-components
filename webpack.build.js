@@ -1,33 +1,32 @@
 const path = require('path');
-const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const nodeExternals = require('webpack-node-externals');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-module.exports = merge(common, {
-    entry: path.resolve(__dirname, 'src/index.ts'),
+const config = {
     mode: 'production',
     devtool: 'source-map',
+    entry: path.resolve(__dirname, 'src/index.ts'),
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'index.js',
         libraryTarget: 'commonjs'
     },
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.svg']
     },
     module: {
         rules: [
+            { test: /\.ts$/, loader: 'ts-loader' },
+            { test: /\.tsx$/, loader: 'ts-loader' },
+            { test: /\.svg$/, use: ['@svgr/webpack'] },
             {
                 test: /\.(sa|sc)ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    'sass-loader',
                 ]
             }
         ]
@@ -37,7 +36,7 @@ module.exports = merge(common, {
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: 'fewbox-figma.min.css',
+            filename: 'fewbox-base.min.css',
             chunkFilename: '[id].min.css',
         }),
         new CopyWebpackPlugin({
@@ -52,4 +51,6 @@ module.exports = merge(common, {
         })
     ],
     externals: [nodeExternals()]
-});
+};
+
+module.exports = config;

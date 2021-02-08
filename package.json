@@ -6,10 +6,8 @@
   "author": "FewBox support@fewbox.com",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "webpack --config webpack.dev.js",
-    "build:tsc": "tsc",
-    "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.build.js",
+    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
