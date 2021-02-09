@@ -42,6 +42,20 @@ class HomePage extends React.Component<IHomePageProps, any> {
                 <Base.Layout.Row>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
+                        <Figma.UI.Button category={Figma.UI.ButtonCategoryType.OutlinePrimary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
+                        <Figma.UI.Button category={Figma.UI.ButtonCategoryType.LinkPrimary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
                         <Figma.UI.TextBox placeholder={this.props.intl.formatMessage({ id: "Label.Placeholder" })} />
                     </Base.Layout.Col>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>

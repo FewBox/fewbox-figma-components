@@ -1,8 +1,8 @@
 // Base
 $primary-color: #d864a3;
-$primary-variant-color: light($primary-color, 0.6);
+$primary-variant-color: lighten($primary-color, 0.6);
 $secondary-color: #3d23c4;
-$secondary-variant-color: light($secondary-color, 0.6);
+$secondary-variant-color: lighten($secondary-color, 0.6);
 $background-color: #ffffff;
 // On
 $on-primary-color: #ffffff;

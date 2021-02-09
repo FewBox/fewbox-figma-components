@@ -4,14 +4,70 @@
     line-height: 1.5;
     font-size: $typography-size;
     width: 100%;
+    &:focus {
+        outline: none;
+    }
+}
+@mixin button($color, $back-color) {
+    @extend .fb-button;
+    background-color: $back-color;
+    border-color: $back-color;
+    border: 1px solid transparent;
+    color: $color;
+    &:hover {
+        background-color: darken($back-color, 0.2);
+    }
+}
+@mixin button-outline($color, $back-color) {
+    @extend .fb-button;
+    background-color: transparent;
+    border-color: $back-color;
+    border: 1px solid;
+    color: $color;
+    &:hover {
+    }
+}
+@mixin button-link($color, $back-color) {
+    background-color: transparent;
+    @extend .fb-button;
+    border-width: 0;
+    color: $color;
+    &:hover {
+    }
 }
 .fb-button-primary {
-    @extend .fb-button;
-    background-color: $primary-color;
-    border-color: $primary-color;
-    border: 1px solid transparent;
-    color: $on-primary-color;
-    &:hover {
-        background-color: darken($primary-color, 0.2);
-    }
+    @include button($on-primary-color, $primary-color);
+}
+.fb-button-outline-primary {
+    @include button-outline($primary-color, $primary-color);
+}
+.fb-button-link-primary {
+    @include button-link($primary-color, $primary-color);
+}
+.fb-button-primary-variant {
+    @include button($on-primary-color, $primary-variant-color);
+}
+.fb-button-outline-primary-variant {
+    @include button-outline($primary-color, $primary-variant-color);
+}
+.fb-button-link-primary-variant {
+    @include button-link($primary-color, $primary-variant-color);
+}
+.fb-button-secondary {
+    @include button($on-secondary-color, $secondary-color);
+}
+.fb-button-outline-secondary {
+    @include button-outline($secondary-color, $secondary-color);
+}
+.fb-button-link-secondary {
+    @include button-link($secondary-color, $secondary-color);
+}
+.fb-button-secondary-variant {
+    @include button($on-secondary-color, $secondary-variant-color);
+}
+.fb-button-outline-secondary-variant {
+    @include button-outline($secondary-variant-color, $secondary-variant-color);
+}
+.fb-button-link-secondary-variant {
+    @include button-link($secondary-variant-color, $secondary-variant-color);
 }
