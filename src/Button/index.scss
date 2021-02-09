@@ -3,6 +3,7 @@
 .fb-button {
     line-height: 1.5;
     font-size: $typography-size;
+    width: 100%;
 }
 .fb-button-primary {
     @extend .fb-button;

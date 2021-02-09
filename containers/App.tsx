@@ -5,6 +5,7 @@ import { IntlProvider } from 'react-intl';
 import langs from '../langs';
 // Page
 import HomePage from './HomePage';
+import '@fewbox/react-components/dist/fewbox-base.min.css';
 
 export interface AppProps {
 }

@@ -776,9 +776,9 @@
   version "0.5.2"
   resolved "https://registry.npmjs.org/@discoveryjs/json-ext/-/json-ext-0.5.2.tgz#8f03a22a04de437254e8ce8cc84ba39689288752"
 
-"@fewbox/react-components@^0.0.22":
-  version "0.0.22"
-  resolved "https://registry.npmjs.org/@fewbox/react-components/-/react-components-0.0.22.tgz#48197ebf71cb01f861c7ead1527b9c68293c394a"
+"@fewbox/react-components@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.npmjs.org/@fewbox/react-components/-/react-components-0.0.24.tgz#8df9de77d95fa3059baa5bff50e74b96ced061d2"
 
 "@formatjs/ecma402-abstract@1.5.2":
   version "1.5.2"

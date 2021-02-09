@@ -14,7 +14,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@fewbox/react-components": "^0.0.22",
+    "@fewbox/react-components": "^0.0.24",
     "@microsoft/signalr": "^5.0.2",
     "@sentry/browser": "^6.1.0",
     "@svgr/webpack": "^5.5.0",
