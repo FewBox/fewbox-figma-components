@@ -5,9 +5,13 @@
     @extend .fb-input;
     cursor: pointer;
     background-color: $primary-color;
+    border-color: $primary-color;
+    border: 1px solid transparent;
+    padding: 1px 6px;
     input {
         width: 100%;
         cursor: pointer;
+        padding: 0;
         background-color: $primary-color;
         color: $on-primary-color;
     }

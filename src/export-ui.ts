@@ -6,3 +6,5 @@ export { default as Submit } from './Input/Submit';
 export { default as Select, SelectOption } from './Select';
 export { default as TextArea } from './TextArea';
 export { default as Form } from './Form';
+export { default as Label, LabelCategoryType } from './Typography/Label';
+export { default as Link, LinkCategoryType } from './Typography/Link';

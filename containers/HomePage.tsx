@@ -33,50 +33,80 @@ class HomePage extends React.Component<IHomePageProps, any> {
             <div className="homePage">
                 <Base.Boot.FewBox options={options} />
                 <Base.Layout.Row>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
                         <Figma.UI.Button category={Figma.UI.ButtonCategoryType.Primary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
                     </Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                </Base.Layout.Row>
-                <Base.Layout.Row>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
-                        <Figma.UI.Button category={Figma.UI.ButtonCategoryType.OutlinePrimary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
-                    </Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                </Base.Layout.Row>
-                <Base.Layout.Row>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
-                        <Figma.UI.Button category={Figma.UI.ButtonCategoryType.LinkPrimary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
-                    </Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                </Base.Layout.Row>
-                <Base.Layout.Row>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
-                        <Figma.UI.TextBox placeholder={this.props.intl.formatMessage({ id: "Label.Placeholder" })} />
-                    </Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                </Base.Layout.Row>
-                <Base.Layout.Row>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
-                        <Figma.UI.TextArea rows={2} />
-                    </Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                </Base.Layout.Row>
-                <Base.Layout.Row>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={8}>
-                        <Figma.UI.CheckBox />
-                    </Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={2}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
                 </Base.Layout.Row>
                 <Base.Layout.Row>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
-                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.Button category={Figma.UI.ButtonCategoryType.OutlinePrimary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.Button category={Figma.UI.ButtonCategoryType.LinkPrimary} type={Figma.UI.ButtonType.Button} caption={<FormattedMessage id="Label.Button" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.TextBox placeholder={this.props.intl.formatMessage({ id: "Label.Placeholder" })} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.TextArea rows={4} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.CheckBox />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.Label caption={<FormattedMessage id="Label.LabelDefault" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.Label category={Figma.UI.LabelCategoryType.Primary} caption={<FormattedMessage id="Label.LabelPrimary" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.Label category={Figma.UI.LabelCategoryType.Secondary} caption={<FormattedMessage id="Label.LabelSecondary" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.UI.Label caption={<FormattedMessage id="Label.LabelPrefix" />} />
+                        <Figma.UI.Link category={Figma.UI.LinkCategoryType.Primary} caption={<FormattedMessage id="Label.LinkPrimary" />} onClick={()=>{ alert('Goto'); }} />
+                        <Figma.UI.Label caption={<FormattedMessage id="Label.LabelSuffix" />} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
+                <Base.Layout.Row>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
                         <Figma.UI.Form handleSubmit={this.handleSubmit}>
                             <Figma.UI.TextBox icon={<Figma.Icon.User />} name="user.name" />
                             <Figma.UI.Password icon={<Figma.Icon.Lock />} name="user.password" />

@@ -1,0 +1,16 @@
+@import "theme/fewbox-variables";
+@import "..";
+
+@mixin label($color) {
+    color: $color;
+    @extend .fb-typography;
+}
+.fb-label {
+    @include label($typography-color);
+}
+.fb-label-primary {
+    @include label($primary-color);
+}
+.fb-label-secondary {
+    @include label($secondary-color);
+}

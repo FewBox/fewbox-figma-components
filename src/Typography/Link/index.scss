@@ -1,0 +1,18 @@
+@import "theme/fewbox-variables";
+@import "..";
+
+@mixin link($color) {
+    color: $color;
+    cursor: pointer;
+    font-style: italic;
+    @extend .fb-typography;
+}
+.fb-link {
+    @include link($typography-color);
+}
+.fb-link-primary {
+    @include link($primary-color);
+}
+.fb-link-secondary {
+    @include link($secondary-color);
+}
