@@ -15,7 +15,7 @@
     border: 1px solid transparent;
     color: $color;
     &:hover {
-        background-color: darken($back-color, 0.2);
+        background-color: darken($back-color, 10%);
     }
 }
 @mixin button-outline($color, $back-color) {

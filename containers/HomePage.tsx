@@ -32,6 +32,13 @@ class HomePage extends React.Component<IHomePageProps, any> {
         return (
             <div className="homePage">
                 <Base.Boot.FewBox options={options} />
+                <Base.Layout.Row textAlignType={Base.Layout.TextAlignType.Center} style={{margin: '10px 0'}}>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
+                        <Figma.Icon.Logo style={{color: '#d864a3', height: '26px'}} />
+                    </Base.Layout.Col>
+                    <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
+                </Base.Layout.Row>
                 <Base.Layout.Row>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>

@@ -1,6 +1,6 @@
 {
   "name": "@fewbox/figma-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "repository": "https://github.com/FewBox/fewbox-figma-components.git",
   "author": "FewBox support@fewbox.com",
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@fewbox/react-components": "^0.0.24",
+    "@fewbox/react-components": "^0.0.25",
     "@microsoft/signalr": "^5.0.2",
     "@sentry/browser": "^6.1.0",
     "@svgr/webpack": "^5.5.0",
