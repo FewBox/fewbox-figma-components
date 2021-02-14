@@ -105,9 +105,9 @@ class HomePage extends React.Component<IHomePageProps, any> {
                 <Base.Layout.Row>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={3}>
-                        <Figma.UI.Label caption={<FormattedMessage id="Label.LabelPrefix" />} />
-                        <Figma.UI.Link category={Figma.UI.LinkCategoryType.Primary} caption={<FormattedMessage id="Label.LinkPrimary" />} onClick={()=>{ alert('Goto'); }} />
-                        <Figma.UI.Label caption={<FormattedMessage id="Label.LabelSuffix" />} />
+                        <Figma.UI.Label style={{fontSize: '8px'}} caption={<FormattedMessage id="Label.LabelPrefix" />} />
+                        <Figma.UI.Link style={{fontSize: '8px'}} category={Figma.UI.LinkCategoryType.Primary} caption={<FormattedMessage id="Label.LinkPrimary" />} onClick={()=>{ alert('Goto'); }} />
+                        <Figma.UI.Label style={{fontSize: '8px'}} caption={<FormattedMessage id="Label.LabelSuffix" />} />
                     </Base.Layout.Col>
                     <Base.Layout.Col type={Base.Layout.ColType.Small} columnCount={4}></Base.Layout.Col>
                 </Base.Layout.Row>

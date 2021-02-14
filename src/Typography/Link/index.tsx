@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import Typography from '..';
 
 export enum LinkCategoryType {
@@ -9,6 +9,7 @@ export enum LinkCategoryType {
 
 export interface ILinkProps {
     category?: LinkCategoryType;
+    style?: CSSProperties;
     caption: string | JSX.Element;
     onClick?: () => void;
 }
@@ -35,6 +36,6 @@ export default class Link extends React.Component<ILinkProps, ILinkStates> {
         else {
             linkCategory = 'fb-link';
         }
-        return <Typography className={linkCategory} caption={this.props.caption} onClick={this.props.onClick} />;
+        return <Typography className={linkCategory} style={this.props.style} caption={this.props.caption} onClick={this.props.onClick} />;
     }
 }

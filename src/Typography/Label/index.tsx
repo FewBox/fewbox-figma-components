@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import Typography from '..';
 
 export enum LabelCategoryType {
@@ -9,6 +9,7 @@ export enum LabelCategoryType {
 
 export interface ILabelProps {
     category?: LabelCategoryType;
+    style?: CSSProperties;
     caption: string | JSX.Element;
 }
 
@@ -34,6 +35,6 @@ export default class Label extends React.Component<ILabelProps, ILabelStates> {
         else {
             labelCategory = 'fb-label';
         }
-        return <Typography className={labelCategory} caption={this.props.caption} />;
+        return <Typography className={labelCategory} style={this.props.style} caption={this.props.caption} />;
     }
 }
